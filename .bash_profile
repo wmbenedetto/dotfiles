@@ -15,6 +15,12 @@ shopt -s nocaseglob
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 
+# Don't put duplicate lines in the history
+export HISTCONTROL=ignoredups
+
+# Ignore same successive entries in history
+export HISTCONTROL=ignoreboth
+
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
@@ -41,3 +47,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# Mount directory on Windows host
+sudo mount -t vboxsf -o uid=1000,gid=1000 code ~/code
