@@ -15,12 +15,6 @@ shopt -s nocaseglob
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 
-# Don't put duplicate lines in the history
-export HISTCONTROL=ignoredups
-
-# Ignore same successive entries in history
-export HISTCONTROL=ignoreboth
-
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
