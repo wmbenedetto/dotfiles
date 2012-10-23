@@ -1,3 +1,5 @@
+#!/bin/bash
+
 olddotfiles="$HOME/old-dotfiles"
 
 # Create directory to store old dotfiles
