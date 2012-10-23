@@ -75,3 +75,9 @@
 	pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
+[user]
+	name = "Warren Benedetto"
+	email = "warren@transfusionmedia.com"
+
+[github]
+	user = "wmbenedetto"
