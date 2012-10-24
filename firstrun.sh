@@ -32,6 +32,7 @@ dotfiles[10]=".inputrc"
 dotfiles[11]=".screenrc"
 dotfiles[12]=".vimrc"
 dotfiles[13]=".wgetrc"
+dotfiles[14]=".vim"
 
 # Iterate over dotfiles array
 for dotfile in ${dotfiles[*]}
