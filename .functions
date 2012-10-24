@@ -163,23 +163,31 @@ function unquarantine() {
 # Switch between home and work environments
 function switch(){
 
-	# Unmount drive if it's already mounted	
+	# Unmount gaikai drive if it's already mounted	
 	if grep -qs "/home/warren/gaikai" /proc/mounts
     then
 		sudo umount /home/warren/gaikai
 	fi
-	
+ 	
+	# Unmount code drive if it's already mounted	
+	if grep -qs "/home/warren/code" /proc/mounts
+    then
+		sudo umount /home/warren/code
+	fi
+
 	if [ $1 == 'work' ]
 	then
 	
 		echo "Switching to work config"
 		sudo mount -t vboxsf "gaikai-work" /home/warren/gaikai
+		sudo mount -t vboxsf "code" /home/warren/code
 
 	elif [ $1 == 'home' ]
 	then
 
 		echo "Switching to home config"
-		sudo mount -t vboxsf gaikai /home/warren/gaikai
+		sudo mount -t vboxsf "gaikai-home" /home/warren/gaikai
+		sudo mount -t vboxsf "code" /home/warren/code
 	
 	elif [ $1 == '--help' ]
 	then
