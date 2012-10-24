@@ -8,7 +8,7 @@ I don't recommend using these. Fork Mathias instead (https://github.com/mathiasb
 
 Clone to ~/setup
 
-Run firstrun.sh. This will symlink the dotfiles into your home directory.
+Run firstrun.sh. This will symlink the dotfiles into your home directory, as well as setting up the home dir structure.
 
 # Switching environments
 
