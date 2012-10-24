@@ -1,6 +1,15 @@
 #!/bin/bash
 
-olddotfiles="$HOME/old-dotfiles"
+mkdir "$HOME/src"
+mkdir "$HOME/lib"
+mkdir "$HOME/bin"
+mkdir "$HOME/usr"
+mkdir "$HOME/www"
+mkdir "$HOME/tmp"
+mkdir "$HOME/www/hosts"
+mkdir "$HOME/www/sites"
+
+olddotfiles="$HOME/tmp/old-dotfiles"
 
 # Create directory to store old dotfiles
 if [ ! -d $olddotfiles ]
@@ -34,11 +43,11 @@ do
 	if [ -e "$HOME/$dotfile" ] 
 	then
 
-		echo "$dotfile moved to ~/old-dotfiles"
+		echo "$dotfile moved to $olddotfiles/$dotfile"
 		mv "$HOME/$dotfile" "$olddotfiles/$dotfile"
 
-		echo "$dotfile symlinked to git dotfiles"
-		ln -s "$HOME/setup/dotfiles/$dotfile" "$HOME/$dotfile"
+		echo "$dotfile symlinked to $HOME/lib/dotfiles/$dotfile"
+		ln -s "$HOME/lib/dotfiles/$dotfile" "$HOME/$dotfile"
 	fi
 done
 
