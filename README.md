@@ -6,7 +6,7 @@ I don't recommend using these. Fork Mathias instead (https://github.com/mathiasb
 
 # Usage
 
-Clone to ~/setup
+Clone to ~/lib/dotfiles
 
 Run firstrun.sh. This will symlink the dotfiles into your home directory, as well as setting up the home dir structure.
 
