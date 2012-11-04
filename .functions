@@ -198,4 +198,6 @@ function switch(){
 	else
 		echo "$1 is not a valid option. Try switch --help for valid options."
 	fi
+
+	sudo /etc/init.d/apache2 start
 }
