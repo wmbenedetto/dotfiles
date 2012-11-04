@@ -99,3 +99,4 @@ done
 
 alias me="cd ~/usr/me"
 alias gk="cd ~/usr/gaikai"
+alias ug="$HOME/lib/dotfiles/uglifier.sh"
