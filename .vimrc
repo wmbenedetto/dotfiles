@@ -90,4 +90,14 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 endif
 
+ " Set color scheme
 colorscheme xoria256
+
+" Set up vundle (https://github.com/gmarik/vundle)
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+Bundle 'gmarik/vundle'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'pangloss/vim-javascript'
+filetype plugin indent on
