@@ -7,7 +7,7 @@ mkdir "$HOME/usr"
 mkdir "$HOME/www"
 mkdir "$HOME/tmp"
 
-ln -s /etc/apache2/sites-availble "$HOME/www/sites-available"
+ln -s /etc/apache2/sites-available "$HOME/www/sites-available"
 
 olddotfiles="$HOME/tmp/old-dotfiles"
 
