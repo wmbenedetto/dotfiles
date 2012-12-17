@@ -47,9 +47,10 @@ do
 		echo "$dotfile moved to $olddotfiles/$dotfile"
 		mv "$HOME/$dotfile" "$olddotfiles/$dotfile"
 
-		echo "$dotfile symlinked to $HOME/lib/dotfiles/$dotfile"
-		ln -s "$HOME/lib/dotfiles/$dotfile" "$HOME/$dotfile"
 	fi
+
+	echo "$dotfile symlinked to $HOME/lib/dotfiles/$dotfile"
+    ln -s "$HOME/lib/dotfiles/$dotfile" "$HOME/$dotfile"
 done
 
 source .bash_profile
