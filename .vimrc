@@ -93,7 +93,7 @@ endif
  " Set color scheme
 colorscheme xoria256
 
-" Set up vundle (https://github.com/gmarik/vundle)
+" Set up vundle (git@github.com:VundleVim/Vundle.vim.git)
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
@@ -101,3 +101,5 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'pangloss/vim-javascript'
 filetype plugin indent on
+
+map <C-a> <esc>ggVG<CR>

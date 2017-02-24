@@ -100,3 +100,4 @@ done
 alias me="cd ~/usr/me"
 alias gk="cd ~/usr/gaikai"
 alias ug="$HOME/lib/dotfiles/uglifier.sh"
+alias forever="$HOME/node_modules/forever/bin/forever"
