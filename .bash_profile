@@ -43,6 +43,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 # Start SSH agent
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa_deploy
-ssh-add ~/.ssh/id_rsa_deploy2
+#eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/id_rsa_deploy
+#ssh-add ~/.ssh/id_rsa_deploy2

@@ -94,12 +94,13 @@ endif
 colorscheme xoria256
 
 " Set up vundle (https://github.com/VundleVim/Vundle)
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-Bundle 'VundleVim/Vundle'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'pangloss/vim-javascript'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'pangloss/vim-javascript'
+call vundle#end()
 filetype plugin indent on
 
 map <C-a> <esc>ggVG<CR>
