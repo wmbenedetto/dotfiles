@@ -93,10 +93,10 @@ endif
  " Set color scheme
 colorscheme xoria256
 
-" Set up vundle (git@github.com:VundleVim/Vundle.vim.git)
+" Set up vundle (https://github.com/VundleVim/Vundle)
 set rtp+=~/.vim/bundle/vundle
 call vundle#rc()
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'pangloss/vim-javascript'
